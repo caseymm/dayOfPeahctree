@@ -30,10 +30,10 @@
     // NOTE: These keys are provided so the sample.html file can run. Don't use
     // them in a production environment because the rate limit will be lumped
     // in with everyone else testing the plugin
-    $consumerKey        = 'Lcue9qrjJlLBzZXS0jYoQ';
-    $consumerSecret     = 'rkPTvgh8nwvCULeKeuB6wgET9isQrKeJdi2f0x3PnQU';
-    $accessToken        = '80357329-wUWqRGSgqGFxu6ozgFiGoE4Dz32tzqnMrENU3jcUf';
-    $accessTokenSecret  = '2EEPSyDHldG0fHRJbBeKVEmsLWAR3Y17YVTtHebozs';
+    $consumerKey        = 'zLLbNJCqaW7xMhDhWDg';
+    $consumerSecret     = 'eTxRACTs1RGlLBkPFrxsJeaoaxVY4cUvdD3xT3MO4I';
+    $accessToken        = '53286916-82fJzY66oUJCD19bVRZlEmsSn7t34SBf0KTkpINkI';
+    $accessTokenSecret  = 'f8mVpVYh1Zcvcl6UzFOSvmZjWzMC0aKCs79LPVdtsCk';
 
     /* END SETUP ==========================================================*/
     
