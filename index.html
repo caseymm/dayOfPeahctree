@@ -2,10 +2,17 @@
 
 <html>
 <head>
+    
+    <!--accordion -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="accordion/js/jquery.zaccordion.js"></script>
+    <!--accordion end-->
+    
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    
     
     
     <link rel="stylesheet" href="map/css/leaflet.css" />
@@ -18,24 +25,97 @@
     <script src="map/js/leaflet.awesome-markers.js"></script>
     
     
+    
+    
     <title>Day of Peachtree</title>
 </head>
 
 <body>
 <div class="container">
     
-<div class="row">
-    <div class="span12">
-        <div id="map"></div>
-        <script src="map/js/myMap.js"></script>     
+<div class="row-fluid">
+    <div class="span8">
+        <div class="blue headBox margin-bottom shadow"><span class="name">AJC Peachtree Dashboard</span></div>
+    </div>
+    <div class="span4">
+        <a href="#"><div class="headBoxRight margin-bottom shadow"><span class="results">Find your Results</span></div></a>
     </div>
 </div>
-    
-<div class="row">
-    <div class="span12">
-        <iframe width="100%" height="500px" scrolling="yes" overflow="hidden" frameborder="0"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe>
+
+<div class="row-fluid">
+    <div class="span8">
+        
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#example14").zAccordion({
+					tabWidth: "10%",
+					width: "100%",
+					height: "350px",
+					auto: false
+				});
+				
+			});
+		</script>
+                
+                <div class="shadow margin-bottom">
+                <ul id="example14">
+				 
+                                <li>
+                                    <div id="map"></div>
+                                    <script src="map/js/myMap.js"></script>
+                                    
+                                </li>
+				<li class="red">
+                                    <div class="rotate accText">Where to watch</div>
+                                    <div class="white">
+                                        <span class="left sliderText">
+                                            <div class="place"><a href="http:/cookhallatlanta.com">Cook Hall</a></div>
+                                            Provided seating
+                                            includes wooden chairs, pillow lined benches, and umbrella-covered tables.
+                                            <br />
+                                            <b>Plus:</b> Cook Hall's Fourth Fest kicks off at 5 p.m. Tickets $30/adv & $35/door.
+                                            
+                                            <br /><br />
+                                            
+                                            <div class="place"><a href="http://www.rthomasdeluxegrill.net">R. Thomas Deluxe Grill</a></div>
+                                            R. Thomas houses a 30 table patio capable of seating up to 89 guests at a
+                                            time. <br />
+                                            <b>Plus:</b> 
+                                            R. Thomas is health conscious and provides many healthy eating options.
+                                            
+                                        </span>
+                                        <span class="right sliderText">
+                                            <div class="place"><a href="http://www.flyingbiscuit.com">The Flying Biscuit Cafe</a></div>
+                                            Outdoor patio seating is limited, but spectators sitting inside can also view the race
+                                            through the establishment's large windows.
+                                            <br />
+                                            <b>Plus:</b> Located near the finish line. Will be selling grab-and-go treats outside.
+                                            
+                                            <br /><br />
+                                            
+                                            <div class="place"><a href="http://www.tapat1180.com">TAP</a></div>
+                                            TAP will be expanding its outdoor patio with extra tables and chairs for July 4th celebrations. <br />
+                                            <b>Plus:</b> 
+                                            Patio is dog friendly.
+                                        </span>
+                                    </div>
+                                </li>
+                                
+			</ul>
+                </div>
+                
+        <iframe width="100%" height="400px" scrolling="yes" overflow="hidden" frameborder="no"  src="facesSlider/myVersion/index.html"></iframe>
+  
+    </div>
+
+    <div class="span4">
+        <div class="shadow twitterHead" id="height">
+            <span class="headText">#running</span>
+        <div class="iframe"><iframe width="100%" height="750px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
+        </div>
     </div>
 </div>
+
 </div>
 
 </body>

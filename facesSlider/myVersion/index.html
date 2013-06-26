@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Pic Grid</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery1.10.1.min.js"></script>
+	
+	<script type="text/javascript">
+	var gridID;
+	var name;
+	var from;
+	var yearsRun;
+	var age;
+	var tweet;
+	var slideID;
+	var imgSrc;
+	var lilImg;
+	var bigImg;
+	var slideSpot;
+	var firstPos;
+	var buildHTML;
+	
+	$(document).ready(function() {
+		$.ajax({
+		  type: "GET",
+		  url: "data/runners.xml",
+		  dataType: "xml",
+		  success: parseRunners
+		  });
+	});
+	
+	function parseRunners(xml) {
+		//$('<ul class="cbp-rfgrid">').appendTo('.container');
+		//buildHTML += '<ul class="cbp-rfgrid">';
+	$(xml).find("person").each(function(e,gridId,name,from,yearsRun,age,tweet,slideID,imgSrc,lilImg,bigImg,firstPos,slideSpot){
+		
+		gridID = $(this).attr("id");
+		name = $(this).find("name").text();
+		from = $(this).find("from").text();
+		yearsRun = $(this).find("yrsrun").text();
+		age = $(this).find("age").text();
+		tweet = $(this).find("tweet").text();
+		slideID = gridID + "div";
+		imgSrc = $(this).attr("url");
+		lilImg = '<a href="#"><img src="' + imgSrc + '"/><div><h3>' + name + '</h3></div></a>';
+		//listItem = '#' + gridID;
+		//lilImg = '<img src="' + imgSrc + '" />';
+		bigImg = '<img src="' + imgSrc + '" width="260px" height="260px"/>';
+			//buildHTML += '<li><div id="' + gridID + '">' + lilImg + '</div></li>';
+		$('<li><div id="' + gridID + '">' + lilImg + '</div></li>').appendTo('.cbp-rfgrid');
+		/*var spot = e*500;
+		slideSpot = $('#portraitList').position();
+		firstPos = $('#img1div').position();
+		*/
+		
+		//fill table with images
+		
+		//$('#'+gridID).append(lilImg);
+		
+		//make image grid click to open lightbox
+		
+		/*$('#'+gridID).click(function(event){
+			$('#boxContainer').show();
+			$('#portraitList').css({'left':'0'});
+			$('#portraitList').animate({'left':'-='+spot},'100');
+			$('#hiddenLayer').show();
+		});*/	
+		
+		
+});
+	//buildHTML += '</ul>';
+	//$('</ul>').appendTo('.container');
+	//$(buildHTML).appendTo('.runnerImages');
+	//$('.cbp-rfgrid').appendTo('.runnerImages');
+	};
+	</script>
+	
+	</head>
+	<body>
+		<div class="container">
+			<ul class="cbp-rfgrid">	
+			<!--<ul class="cbp-rfgrid">
+				<li><div id="img1"></div></li>
+				<li><a href="#"><div id="img2"></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
+				
+			</ul>-->
+			</ul>
+		</div>
+	</body>
+</html>

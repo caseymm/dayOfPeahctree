@@ -1,6 +1,15 @@
 /* required styles */
 
-#map { height: 400px; width: 100%; }
+#map { height: 350px; width: 100%; }
+
+path{
+stroke-linejoin: round;
+stroke-linecap: round;
+stroke: #0007D1;
+stroke-opacity: 0.7;
+stroke-width: 5px;
+fill: none;
+}
 
 .leaflet-map-pane,
 .leaflet-tile,

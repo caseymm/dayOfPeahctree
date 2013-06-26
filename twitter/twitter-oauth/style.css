@@ -3,8 +3,8 @@
 	    background:#fff;
 	    font-family:arial;
 	    font-size:12px;
-	    margin:0;
-	    padding:10px 10px 0 10px;
+	    margin:0 0 0 0;
+	    padding:10px 0 0 0;
 	    height:100%;
 	    color:#333;
 	}
@@ -20,7 +20,7 @@
 		-moz-border-radius:5px;
 		border-radius:5px;				
 		background:#fcf8e3;
-		border:1px solid  #fbeed5;
+		border:1px solid  #CFCFD1;
 		width:100%;
 		max-width:900px;
 		margin:0 auto 10px auto;

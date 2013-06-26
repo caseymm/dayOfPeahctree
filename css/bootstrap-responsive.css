@@ -8,6 +8,10 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+.container600{
+  width:600px;
+}
+
 .clearfix {
   *zoom: 1;
 }
@@ -125,7 +129,7 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
   }
   .container,
   .navbar-static-top .container,

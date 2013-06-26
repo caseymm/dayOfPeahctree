@@ -1,0 +1,18 @@
+#boxContainer{
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888;
+    z-index:100;
+    display:none;
+    width:500px;
+    height:350px;
+    border: 2px solid #ccc;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color:#fff;
+    overflow:hidden;
+    position:absolute;
+    top:220;
+    left:50;
+    padding-top:20px;
+}
