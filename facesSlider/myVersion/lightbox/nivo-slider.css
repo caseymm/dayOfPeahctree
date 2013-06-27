@@ -75,6 +75,7 @@
 	opacity: 0.8;
 	overflow: hidden;
 	display: none;
+	visibility: hidden;
 	-moz-opacity: 0.8;
 	filter:alpha(opacity=8);
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */

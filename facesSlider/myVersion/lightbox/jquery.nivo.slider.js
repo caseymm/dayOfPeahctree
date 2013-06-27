@@ -88,10 +88,10 @@
         });
 
         //Create caption
-        slider.append($('<div class="nivo-caption"></div>'));
+       // slider.append($('<div class="nivo-caption"></div>'));
         
         // Process caption function
-        var processCaption = function(settings){
+        /*var processCaption = function(settings){
             var nivoCaption = $('.nivo-caption', slider);
             if(vars.currentImage.attr('title') != '' && vars.currentImage.attr('title') != undefined){
                 var title = vars.currentImage.attr('title');
@@ -108,10 +108,10 @@
             } else {
                 nivoCaption.stop().fadeOut(settings.animSpeed);
             }
-        }
+        }*/
         
         //Process initial  caption
-        processCaption(settings);
+        //processCaption(settings);
         
         // In the words of Super Mario "let's a go!"
         var timer = 0;

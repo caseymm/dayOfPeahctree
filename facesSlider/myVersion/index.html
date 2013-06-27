@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="lightbox/nivo-slider.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="lightbox/demo/style.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="lightbox/jquery.nivo.slider.js"></script>
+		<!--<script type="text/javascript" src="lightbox/jquery.nivo.slideTo.js"></script>-->
 		<!--end slider links -->
 	
 	<script type="text/javascript">
@@ -52,26 +53,45 @@
 		age = $(this).find("age").text();
 		tweet = $(this).find("tweet").text();
 		slideID = gridID + "div";
+		//caption = '<div class="nivo-caption" ><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>';
+		
 		imgSrc = $(this).attr("url");
 		lilImg = '<a href="#"><img src="' + imgSrc + '"/><div><h3>' + name + '</h3></div></a>';
 		//listItem = '#' + gridID;
 		//lilImg = '<img src="' + imgSrc + '" />';
 		bigImg = '<img src="' + imgSrc + '" width="260px" height="260px"/>';
+		
 			
 		$('<li><div id="' + gridID + '">' + lilImg + '</div></li>').appendTo('.cbp-rfgrid');
 		
+		//var divStuff = '<div class="names" id="name'+gridID+'"></div><div style="width:500px;height:280px;display:block;"><div class="images" id="img'+gridID+'"></div><div class="information" id="info'+gridID+'"></div></div>';
 		
-		//make image grid click to open lightbox
-		$('<img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt="" title="#htmlcaption" style="display:inline;"/>').appendTo('#slider');
+		
+		//$(caption).appendTo('#'+slideID);
+		
+		//$('#'+slideID).html(divStuff);
+		//$('#name'+gridID).append('<b>'+name+'</b>');
+		//$('#img'+gridID).html(bigImg);
+		//$('#info'+gridID).html('<p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p>');
+	
+		
+		$('<div id="' + slideID + '"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt=""  style="display:inline;"/></div>').appendTo('#slider');
+		
+		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
+		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
+		$('#' +slideID).append('<p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p>');
 		
 		$(window).load(function() {
 			$('#slider').nivoSlider();
+			//$('#slider').data('nivoslider').slideTo(1);
 			$('#slider').hide();
 		});
 		
+		//make image grid click to open lightbox
 		$('#'+gridID).click(function(event){
 			$('#hiddenLayer').show();
 			$('#slider').show();
+			//$('#slider').data('nivoslider').slideTo(1);
 			
 			
 		});	
@@ -99,11 +119,13 @@
 					
 				</div>
 				
+				<div class="nivo-html-caption">
+					<!--<div id="block"></div>-->
+					</div>
+				
 				<div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:100%;display:none;">
 				
-				<div id="htmlcaption" class="nivo-html-caption">
-					<strong>This</strong> <span class="redText">is an example of a </span><em>HTML</em> caption with <a href="#">a link</a>. 
-				</div>
+				
 			</div>
 			<!--end slider info-->
 			
