@@ -9,6 +9,13 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/jquery1.10.1.min.js"></script>
+		
+		<!--slider links -->
+		<link rel="stylesheet" href="lightbox/themes/default/default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="lightbox/nivo-slider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="lightbox/demo/style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="lightbox/jquery.nivo.slider.js"></script>
+		<!--end slider links -->
 	
 	<script type="text/javascript">
 	var gridID;
@@ -35,8 +42,7 @@
 	});
 	
 	function parseRunners(xml) {
-		//$('<ul class="cbp-rfgrid">').appendTo('.container');
-		//buildHTML += '<ul class="cbp-rfgrid">';
+		
 	$(xml).find("person").each(function(e,gridId,name,from,yearsRun,age,tweet,slideID,imgSrc,lilImg,bigImg,firstPos,slideSpot){
 		
 		gridID = $(this).attr("id");
@@ -51,32 +57,32 @@
 		//listItem = '#' + gridID;
 		//lilImg = '<img src="' + imgSrc + '" />';
 		bigImg = '<img src="' + imgSrc + '" width="260px" height="260px"/>';
-			//buildHTML += '<li><div id="' + gridID + '">' + lilImg + '</div></li>';
+			
 		$('<li><div id="' + gridID + '">' + lilImg + '</div></li>').appendTo('.cbp-rfgrid');
-		/*var spot = e*500;
-		slideSpot = $('#portraitList').position();
-		firstPos = $('#img1div').position();
-		*/
 		
-		//fill table with images
-		
-		//$('#'+gridID).append(lilImg);
 		
 		//make image grid click to open lightbox
+		$('<img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt="" title="#htmlcaption" style="display:inline;"/>').appendTo('#slider');
 		
-		/*$('#'+gridID).click(function(event){
-			$('#boxContainer').show();
-			$('#portraitList').css({'left':'0'});
-			$('#portraitList').animate({'left':'-='+spot},'100');
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+			$('#slider').hide();
+		});
+		
+		$('#'+gridID).click(function(event){
 			$('#hiddenLayer').show();
-		});*/	
+			$('#slider').show();
+			
+			
+		});	
 		
-		
+		//close lightbox
+		$('#hiddenLayer').click(function(event){
+			$('#slider').hide();
+			$('#hiddenLayer').hide();
+		});
 });
-	//buildHTML += '</ul>';
-	//$('</ul>').appendTo('.container');
-	//$(buildHTML).appendTo('.runnerImages');
-	//$('.cbp-rfgrid').appendTo('.runnerImages');
+	
 	};
 	</script>
 	
@@ -84,16 +90,23 @@
 	<body>
 		<div class="container">
 			<ul class="cbp-rfgrid">	
-			<!--<ul class="cbp-rfgrid">
-				<li><div id="img1"></div></li>
-				<li><a href="#"><div id="img2"></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				
-			</ul>-->
+			<!--This is where the images get rendered -->
 			</ul>
+			
+			<!--slider info-->
+			<div class="slider-wrapper theme-default">
+				<div id="slider" class="nivoSlider">
+					
+				</div>
+				
+				<div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:100%;display:none;">
+				
+				<div id="htmlcaption" class="nivo-html-caption">
+					<strong>This</strong> <span class="redText">is an example of a </span><em>HTML</em> caption with <a href="#">a link</a>. 
+				</div>
+			</div>
+			<!--end slider info-->
+			
 		</div>
 	</body>
 </html>
