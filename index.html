@@ -110,9 +110,9 @@
 			$( '#slider' ).nivoSlider();
                         $('.nivoLink').live('click', function(e) {
                         e.preventDefault();
-                        var targetImage = jQuery(this).attr('rel')-1;
-                        var slideNo=jQuery('.nivoSlider').data('nivo:vars').currentSlide; 
-                        if(targetImage!=slideNo) jQuery('.nivo-control').eq(targetImage).trigger('click');
+                        var targetImage = $(this).attr('rel')-1;
+                        var slideNo=$('.nivoSlider').data('nivo:vars').currentSlide; 
+                        if(targetImage!=slideNo) $('.nivo-control').eq(targetImage).trigger('click');
                        });
 			//$('#slider').data('nivoslider').slideTo(1);
 			$('#slider').hide();
@@ -241,7 +241,7 @@
     </div>
 
     <div class="span4">
-        <div class="spacerTop">Peachtree Tweets</div>
+        <!--<div class="spacerTop">Peachtree Tweets</div>-->
         <div class="shadow twitterHead" id="height">
             
             <span class="headText">#running</span>
