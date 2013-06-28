@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     
     
     
@@ -103,7 +104,7 @@
 		
 		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
 		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
-		$('#' +slideID).append('<div class="out border"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
+		$('#' +slideID).append('<div class="out border"><h4>'+name+'</h4><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
 		
 		$(window).load(function() {
 			$( '#slider' ).nivoSlider();
@@ -214,12 +215,12 @@
 			</ul>
                 </div>
                 
+                <div class="blue headBox margin-bottom shadow"><span class="name">Faces of the 2012 Peachtree</span></div>
                 
-                <div class="nivo-menu-container">
                 <ul class="cbp-rfgrid">	
 			<!--This is where the images get rendered -->
 			</ul>
-                </div>                
+                             
 			
 			<!--slider info-->
 			<div class="slider-wrapper theme-default">
@@ -234,21 +235,31 @@
 			<!--end slider info-->
 			
 			</div>
-                        <div class="margin-bottom"></div>
+                        
                 
   
     </div>
 
     <div class="span4">
+        <div class="spacerTop">Peachtree Tweets</div>
         <div class="shadow twitterHead" id="height">
             
             <span class="headText">#running</span>
-        <div class="iframe"><iframe width="100%" height="1000px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
+        <div class="iframe"><iframe width="100%" height="1083px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
         </div>
     </div>
 </div>
 
 </div>
+
+ <script>
+                $('#map').hover(function() {
+                        $('.red').addClass("animatedMed bounce");
+                }, function() {
+                        $('.red').removeClass("animatedMed bounce");
+                });
+               
+            </script>
 
 </body>
 </html>
