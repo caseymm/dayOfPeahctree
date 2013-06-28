@@ -8,6 +8,13 @@ Author URI: http://dev7studios.com
 Supports Thumbs: true
 */
 
+.slider-wrapper { 
+	width: 80%; 
+	margin: auto;
+	padding-top: 100px;
+	max-width: 256px;
+}
+
 .theme-default .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
@@ -20,13 +27,15 @@ Supports Thumbs: true
 	position:absolute;
 	top:0px;
 	left:0px;
-	display:none;
+	/*display:none;*/
 }
 .theme-default .nivoSlider a {
 	border:0;
 	display:block;
+	color:#000;
+	cursor: default;
 }
-
+/*
 .theme-default .nivo-controlNav {
 	text-align: center;
 	padding: 20px 0;
@@ -43,7 +52,7 @@ Supports Thumbs: true
 .theme-default .nivo-controlNav a.active {
 	background-position:0 -22px;
 }
-
+*/
 .theme-default .nivo-directionNav a {
 	display:block;
 	width:30px;
@@ -76,7 +85,7 @@ Supports Thumbs: true
 .theme-default .nivo-caption a:hover {
     color:#fff;
 }
-
+/*
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
 	width: 100%;
 }
@@ -90,4 +99,4 @@ Supports Thumbs: true
 	display: block;
 	width: 120px;
 	height: auto;
-}
+}*/

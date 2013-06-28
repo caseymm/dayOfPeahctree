@@ -6,6 +6,7 @@
 		<yrsrun>1</yrsrun>
 		<from>Atlanta</from>
 		<tweet>I'm excited to finish my 1st Peachtree race</tweet>
+		<num>1</num>
 	</person>
 	<person id="img2" url="img/photo2.jpg">
 		<name>Brett Daniels</name>
@@ -13,6 +14,7 @@
 		<yrsrun>10</yrsrun>
 		<from>Woodstock</from>
 		<tweet>I need to run more!</tweet>
+		<num>2</num>
 	</person>
 	<person id="img3" url="img/photo3.jpg">
 		<name>Yishak Habtemichael</name>
@@ -20,6 +22,7 @@
 		<yrsrun>1</yrsrun>
 		<from>Atlanta</from>
 		<tweet>Feels awesome</tweet>
+		<num>3</num>
 	</person>
 	<person id="img4" url="img/photo4.jpg">
 		<name>Daniel Navarro</name>
@@ -27,6 +30,7 @@
 		<yrsrun>1</yrsrun>
 		<from>Kennesaw</from>
 		<tweet>I did it</tweet>
+		<num>4</num>
 	</person>
 	<person id="img5" url="img/photo5.jpg">
 		<name>Maurya Lacey</name>
@@ -34,6 +38,7 @@
 		<yrsrun>1</yrsrun>
 		<from>Alpharetta</from>
 		<tweet>Awesome Race!</tweet>
+		<num>5</num>
 	</person>
 	<person id="img6" url="img/photo6.jpg">
 		<name>Luanne Francis</name>
@@ -41,6 +46,7 @@
 		<yrsrun>10</yrsrun>
 		<from>Lake Wylie, SC</from>
 		<tweet>Keep hydrated and it's easy!</tweet>
+		<num>6</num>
 	</person>
 	<person id="img7" url="img/photo7.jpg">
 		<name>Neil Bowlus</name>
@@ -48,6 +54,7 @@
 		<yrsrun>2</yrsrun>
 		<from>Atlanta</from>
 		<tweet>Nothing better than PEACHTREE RR!!</tweet>
+		<num>7</num>
 	</person>
 	<person id="img8" url="img/photo8.jpg">
 		<name>Melissa Danielson</name>
@@ -55,6 +62,7 @@
 		<yrsrun>9</yrsrun>
 		<from>Lawrenceville</from>
 		<tweet>That was totally worth it!</tweet>
+		<num>8</num>
 	</person>
 	<person id="img9" url="img/photo9.jpg">
 		<name>Malcolm Tyson</name>
@@ -62,6 +70,7 @@
 		<yrsrun>2</yrsrun>
 		<from>Austell</from>
 		<tweet>Where's the beer?</tweet>
+		<num>9</num>
 	</person>
 	<person id="img10" url="img/photo10.jpg">
 		<name>Matt Watters</name>
@@ -69,6 +78,7 @@
 		<yrsrun>5</yrsrun>
 		<from>Atlanta</from>
 		<tweet>What's more American than a cowboy&#63;</tweet>
+		<num>10</num>
 	</person>
 	<person id="img11" url="img/photo11.jpg">
 		<name>Alex Vidor</name>
@@ -76,6 +86,7 @@
 		<yrsrun>5</yrsrun>
 		<from>Atlanta</from>
 		<tweet>#cakewalk</tweet>
+		<num>11</num>
 	</person>
 	<person id="img12" url="img/photo12.jpg">
 		<name>Thasha A. Boyd</name>
@@ -83,6 +94,7 @@
 		<yrsrun>5</yrsrun>
 		<from>Kennesaw</from>
 		<tweet>I was hawtt!!!</tweet>
+		<num>12</num>
 	</person>
 	<person id="img13" url="img/photo13.jpg">
 		<name>Raymond Tsao</name>
@@ -90,6 +102,7 @@
 		<yrsrun>2</yrsrun>
 		<from>Atlanta</from>
 		<tweet>FINISHED!</tweet>
+		<num>13</num>
 	</person>
 	<person id="img14" url="img/photo14.jpg">
 		<name>Reginald Bell</name>
@@ -97,6 +110,7 @@
 		<yrsrun>2</yrsrun>
 		<from>Macon</from>
 		<tweet>Had a ball! Ready for next year!</tweet>
+		<num>14</num>
 	</person>
 	<person id="img15" url="img/photo15.jpg">
 		<name>Patricia Duboise</name>
@@ -104,6 +118,7 @@
 		<yrsrun>5</yrsrun>
 		<from>Lawrenceville</from>
 		<tweet>I did it!</tweet>
+		<num>15</num>
 	</person>
 	<person id="img16" url="img/photo16.jpg">
 		<name>Brittany Hopson</name>
@@ -111,6 +126,7 @@
 		<yrsrun>4</yrsrun>
 		<from>Atlanta</from>
 		<tweet>I &lt;3 America!</tweet>
+		<num>16</num>
 	</person>
 	<person id="img17" url="img/photo17.jpg">
 		<name>Eugene Bruce</name>
@@ -118,6 +134,7 @@
 		<yrsrun>33</yrsrun>
 		<from>Summerville</from>
 		<tweet>Do it, now!</tweet>
+		<num>17</num>
 	</person>
 	<person id="img18" url="img/photo18.jpg">
 		<name>Tara Hayes and Presley Payne</name>
@@ -125,6 +142,7 @@
 		<yrsrun>4 and 1</yrsrun>
 		<from>Atlanta</from>
 		<tweet>We finished Best feeling ever!</tweet>
+		<num>18</num>
 	</person>
 	<person id="img19" url="img/photo19.jpg">
 		<name>Lola and George Colon</name>
@@ -132,6 +150,7 @@
 		<yrsrun>1 and 2</yrsrun>
 		<from>Dallas</from>
 		<tweet>Loved doing this with my daughter</tweet>
+		<num>19</num>
 	</person>
 	<person id="img20" url="img/photo20.jpg">
 		<name>Thomas G. Johnson</name>
@@ -139,6 +158,7 @@
 		<yrsrun>10 in a row, 13 total</yrsrun>
 		<from>Marietta</from>
 		<tweet>MIMOSAS!</tweet>
+		<num>20</num>
 	</person>
 	<person id="img21" url="img/photo21.jpg">
 		<name>Jennifer Monford and Traci Miller</name>
@@ -146,6 +166,7 @@
 		<yrsrun>1 and 2</yrsrun>
 		<from>Douglasville and Atlanta</from>
 		<tweet>I did it 1:13/Crossed it with my bestie!!</tweet>
+		<num>21</num>
 	</person>
 	<person id="img22" url="img/photo22.jpg">
 		<name>Pamela Pryor</name>
@@ -153,6 +174,7 @@
 		<yrsrun>approx 25</yrsrun>
 		<from>Decatur</from>
 		<tweet>Go Peachtree/ATL!</tweet>
+		<num>22</num>
 	</person>
 	<person id="img23" url="img/photo23.jpg">
 		<name>Shelley Sexton</name>
@@ -160,6 +182,7 @@
 		<yrsrun>3</yrsrun>
 		<from>Atlanta</from>
 		<tweet>Finished @ 36 weeks!</tweet>
+		<num>23</num>
 	</person>
 	<person id="img24" url="img/photo24.jpg">
 		<name>Cliff Teems</name>
@@ -167,6 +190,7 @@
 		<yrsrun>3</yrsrun>
 		<from>Milledgeville</from>
 		<tweet>I felt like I just ran that 365 days ago #nosweat</tweet>
+		<num>24</num>
 	</person>
 	<person id="img25" url="img/photo25.jpg">
 		<name>Johnny Buice</name>
@@ -174,5 +198,6 @@
 		<yrsrun>39</yrsrun>
 		<from>Douglasville</from>
 		<tweet>The crowd and runners are awesome. We are honored and humbled. Thank God for USA</tweet>
+		<num>25</num>
 	</person>
 </people>

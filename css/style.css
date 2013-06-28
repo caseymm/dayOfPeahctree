@@ -29,6 +29,19 @@
     padding-top:15px;
 
 }
+@media (max-width: 767px){
+    .twitterHead{
+    width:100%;
+    height:50px;
+    position:relative;
+    margin-bottom:20px;
+    background-color:#0A0675;
+    overflow:hidden;
+    padding-top:15px;
+    margin-top:1000px;
+
+}
+}
 
 .headText{
     font-size: 22px;
@@ -58,7 +71,7 @@
 }
 
 #height{
-    height:750px;
+    height:1000px;
 }
 
 
@@ -134,13 +147,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 .headBox{
     width:100%;
-    height:40px;
+    height:58px;
     padding-top:19px;
 }
 
 .headBoxRight{
     width:100%;
-    height:40px;
+    height:58px;
     padding-top:19px;
     background-color: #A30008;
 }
@@ -170,4 +183,19 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 a.headBoxRight:hover,
 a.headBoxRight:focus {
   color: #000;
+}
+
+@media (max-width: 767px){
+.spacerTop{
+   width:100%;
+   height:20px;
+}
+}
+
+.out{
+    position:absolute;
+    z-index: 1000;
+    margin-top:280px;
+    background-color:#fff;
+    padding: 10px 10px 10px 10px;
 }

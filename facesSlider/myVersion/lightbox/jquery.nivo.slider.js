@@ -33,10 +33,10 @@
             var child = $(this);
             var link = '';
             if(!child.is('img')){
-                if(child.is('a')){
-                    child.addClass('nivo-imageLink');
-                    link = child;
-                }
+              //  if(child.is('a')){
+                  //  child.addClass('nivo-imageLink');
+                   // link = child;
+               // }
                 child = child.find('img:first');
             }
             // Get img width & height
@@ -88,10 +88,10 @@
         });
 
         //Create caption
-       // slider.append($('<div class="nivo-caption"></div>'));
+        slider.append($('<div class="nivo-caption"></div>'));
         
-        // Process caption function
-        /*var processCaption = function(settings){
+        //Process caption function
+        var processCaption = function(settings){
             var nivoCaption = $('.nivo-caption', slider);
             if(vars.currentImage.attr('title') != '' && vars.currentImage.attr('title') != undefined){
                 var title = vars.currentImage.attr('title');
@@ -108,10 +108,10 @@
             } else {
                 nivoCaption.stop().fadeOut(settings.animSpeed);
             }
-        }*/
+        }
         
         //Process initial  caption
-        //processCaption(settings);
+        processCaption(settings);
         
         // In the words of Super Mario "let's a go!"
         var timer = 0;
@@ -635,11 +635,11 @@
     
     //Default settings
     $.fn.nivoSlider.defaults = {
-        effect: 'random',
-        slices: 15,
+        effect: 'fold',
+        slices: 1,
         boxCols: 8,
         boxRows: 4,
-        animSpeed: 500,
+        animSpeed: 0,
         pauseTime: 3000,
         startSlide: 0,
         directionNav: true,

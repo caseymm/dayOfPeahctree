@@ -24,15 +24,125 @@
     <script src="map/js/leaflet.label.js"></script>
     <script src="map/js/leaflet.awesome-markers.js"></script>
     
+    <!--faces-->
     
+    <link rel="stylesheet" type="text/css" href="facesSlider/myVersion/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="facesSlider/myVersion/css/component.css" />
+    <script src="facesSlider/myVersion/js/modernizr.custom.js"></script>
+    <!--<script src="facesSlider/myVersion/js/jquery1.10.1.min.js"></script>
+		
+    slider links -->
+    <link rel="stylesheet" href="facesSlider/myVersion/lightbox/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="facesSlider/myVersion/lightbox/nivocss.css" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="facesSlider/myVersion/lightbox/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="facesSlider/myVersion/lightbox/demo/style.css" type="text/css" media="screen" />-->
+    <script type="text/javascript" src="facesSlider/myVersion/lightbox/jquery.nivo.slider.js"></script>
+    <!--<script type="text/javascript" src="lightbox/jquery.nivo.slideTo.js"></script>-->
+    <!--end slider links -->
     
-    
+
     <title>Day of Peachtree</title>
+    
+    <script type="text/javascript">
+	var gridID;
+	var name;
+	var from;
+	var yearsRun;
+	var age;
+	var tweet;
+	var slideID;
+	var imgSrc;
+	var lilImg;
+	var bigImg;
+	var slideSpot;
+	var firstPos;
+        var num;
+	//var buildHTML;
+	
+	$(document).ready(function() {
+		$.ajax({
+		  type: "GET",
+		  url: "facesSlider/myVersion/data/runners.xml",
+		  dataType: "xml",
+		  success: parseRunners
+		  });
+	});
+	
+	function parseRunners(xml) {
+		
+	$(xml).find("person").each(function(e,gridId,name,from,yearsRun,age,tweet,slideID,imgSrc,lilImg,bigImg,firstPos,slideSpot){
+		
+		gridID = $(this).attr("id");
+		name = $(this).find("name").text();
+		from = $(this).find("from").text();
+		yearsRun = $(this).find("yrsrun").text();
+		age = $(this).find("age").text();
+		tweet = $(this).find("tweet").text();
+		slideID = gridID + "div";
+                jumpID = gridID + "jump";
+                num = parseFloat($(this).find("num").text());
+                
+                /* $(this).find('ClosedBank').each(function(){
+			state.push($(this).find('State').text());
+			num.push(parseFloat($(this).find('number').text())); */
+                
+		//caption = '<div class="nivo-caption" ><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>';
+		
+		imgSrc = $(this).attr("url");
+		lilImg = '<a id="#' + jumpID + '" class="nivoLink" rel="' + num + '"><img src="' + imgSrc + '" width="130px" height="130px"/><div><h3>' + name + '</h3></div></a>';
+		//listItem = '#' + gridID;
+		//lilImg = '<img src="' + imgSrc + '" />';
+		bigImg = '<img src="' + imgSrc + '" width="260px" height="260px"/>';
+		
+			
+		$('<li><div id="' + gridID + '">' + lilImg + '</div></li>').appendTo('.cbp-rfgrid');
+		
+		
+		
+		$('<a href="#' + jumpID + '"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt="" /><div id="' + slideID + '"></div></a>').appendTo('#slider');
+		
+		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
+		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
+		$('#' +slideID).append('<div class="out border"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
+		
+		$(window).load(function() {
+			$( '#slider' ).nivoSlider();
+                        $('.nivoLink').live('click', function(e) {
+                        e.preventDefault();
+                        var targetImage = jQuery(this).attr('rel')-1;
+                        var slideNo=jQuery('.nivoSlider').data('nivo:vars').currentSlide; 
+                        if(targetImage!=slideNo) jQuery('.nivo-control').eq(targetImage).trigger('click');
+                       });
+			//$('#slider').data('nivoslider').slideTo(1);
+			$('#slider').hide();
+		});
+		
+		//make image grid click to open lightbox
+		$('#'+gridID).click(function(event){
+			$('#hiddenLayer').show();
+			$('#slider').show();
+                        
+			//$('#slider').data('nivoslider').slideTo(1);
+			
+			
+		});	
+		
+		//close lightbox
+		$('#hiddenLayer').click(function(event){
+			$('#slider').hide();
+			$('#hiddenLayer').hide();
+		});
+});
+	
+	};
+	</script>
+    
 </head>
 
 <body>
 <div class="container">
-    
+    <div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:2000px;display:none;">
+</div>
 <div class="row-fluid">
     <div class="span8">
         <div class="blue headBox margin-bottom shadow"><span class="name">AJC Peachtree Dashboard</span></div>
@@ -104,14 +214,36 @@
 			</ul>
                 </div>
                 
-        <iframe width="100%" height="400px" scrolling="yes" overflow="hidden" frameborder="no"  src="facesSlider/myVersion/index.html"></iframe>
+                
+                <div class="nivo-menu-container">
+                <ul class="cbp-rfgrid">	
+			<!--This is where the images get rendered -->
+			</ul>
+                </div>                
+			
+			<!--slider info-->
+			<div class="slider-wrapper theme-default">
+				<div id="slider" class="nivoSlider">
+					
+				</div>
+				
+				<div class="nivo-html-caption">
+					<!--<div id="block"></div>-->
+					</div>
+				
+			<!--end slider info-->
+			
+			</div>
+                        <div class="margin-bottom"></div>
+                
   
     </div>
 
     <div class="span4">
         <div class="shadow twitterHead" id="height">
+            
             <span class="headText">#running</span>
-        <div class="iframe"><iframe width="100%" height="750px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
+        <div class="iframe"><iframe width="100%" height="1000px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
         </div>
     </div>
 </div>

@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Pic Grid</title>
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery1.10.1.min.js"></script>
+
+<html>
+<head>
+    
+    <!--accordion -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="accordion/js/jquery.zaccordion.js"></script>
+    <!--accordion end-->
+    
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    
+    
+    
+    <link rel="stylesheet" href="map/css/leaflet.css" />
+    <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />-->
+    <link rel="stylesheet" href="map/css/leaflet.awesome-markers.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="map/css/leaflet.label.css" />
+    <script src="map/js/leaflet.js"></script>
+    <script src="map/js/leaflet.label.js"></script>
+    <script src="map/js/leaflet.awesome-markers.js"></script>
+    
+    <!--faces-->
+    
+    <link rel="stylesheet" type="text/css" href="facesSlider/myVersion/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="facesSlider/myVersion/css/component.css" />
+    <script src="facesSlider/myVersion/js/modernizr.custom.js"></script>
+    <!--<script src="facesSlider/myVersion/js/jquery1.10.1.min.js"></script>
 		
-		<!--slider links -->
-		<link rel="stylesheet" href="lightbox/themes/default/default.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="lightbox/nivo-slider.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="lightbox/demo/style.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="lightbox/jquery.nivo.slider.js"></script>
-		<!--<script type="text/javascript" src="lightbox/jquery.nivo.slideTo.js"></script>-->
-		<!--end slider links -->
-	
-	<script type="text/javascript">
+    slider links -->
+    <link rel="stylesheet" href="facesSlider/myVersion/lightbox/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="facesSlider/myVersion/lightbox/nivo-slider.css" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="facesSlider/myVersion/lightbox/demo/style.css" type="text/css" media="screen" />-->
+    <script type="text/javascript" src="facesSlider/myVersion/lightbox/jquery.nivo.slider.js"></script>
+    <!--<script type="text/javascript" src="lightbox/jquery.nivo.slideTo.js"></script>-->
+    <!--end slider links -->
+    
+
+    <title>Day of Peachtree</title>
+    
+    <script type="text/javascript">
 	var gridID;
 	var name;
 	var from;
@@ -36,7 +60,7 @@
 	$(document).ready(function() {
 		$.ajax({
 		  type: "GET",
-		  url: "data/runners.xml",
+		  url: "facesSlider/myVersion/data/runners.xml",
 		  dataType: "xml",
 		  success: parseRunners
 		  });
@@ -53,10 +77,11 @@
 		age = $(this).find("age").text();
 		tweet = $(this).find("tweet").text();
 		slideID = gridID + "div";
+                jumpID = gridID + "jump";
 		//caption = '<div class="nivo-caption" ><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>';
 		
 		imgSrc = $(this).attr("url");
-		lilImg = '<a href="#"><img src="' + imgSrc + '"/><div><h3>' + name + '</h3></div></a>';
+		lilImg = '<a id="' + jumpID + '"><img src="' + imgSrc + '" width="130px" height="130px"/><div><h3>' + name + '</h3></div></a>';
 		//listItem = '#' + gridID;
 		//lilImg = '<img src="' + imgSrc + '" />';
 		bigImg = '<img src="' + imgSrc + '" width="260px" height="260px"/>';
@@ -75,7 +100,7 @@
 		//$('#info'+gridID).html('<p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p>');
 	
 		
-		$('<div id="' + slideID + '"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt=""  style="display:inline;"/></div>').appendTo('#slider');
+		$('<a href="' + jumpID + '"><div id="' + slideID + '"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt=""  style="display:inline;"/></div></a>').appendTo('#slider');
 		
 		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
 		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
@@ -105,13 +130,24 @@
 	
 	};
 	</script>
-	
-	</head>
-	<body>
-		
-			<ul class="cbp-rfgrid">	
+    
+</head>
+
+<body>
+<div class="container">
+ 
+<div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:2000px;display:none;">
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        
+                
+                
+                
+                <ul class="cbp-rfgrid">	
 			<!--This is where the images get rendered -->
 			</ul>
+              
 			
 			<!--slider info-->
 			<div class="slider-wrapper theme-default">
@@ -123,12 +159,21 @@
 					<!--<div id="block"></div>-->
 					</div>
 				
-				<div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:100%;display:none;">
+				<!--<div id="hiddenLayer" style="z-index:1; position:absolute; top:0px; left:0px; width:100%;height:100%;display:none;">
 				
 				
-				</div>
+				</div>-->
 			<!--end slider info-->
 			
 			</div>
-	</body>
+                        <div class="margin-bottom"></div>
+                
+  
+    </div>
+
+</div>
+
+</div>
+
+</body>
 </html>
