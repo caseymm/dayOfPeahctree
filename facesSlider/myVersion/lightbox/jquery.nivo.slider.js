@@ -649,7 +649,7 @@
         manualAdvance: true,
         prevText: 'Prev',
         nextText: 'Next',
-        randomStart: false,
+        randomStart: true,
         beforeChange: function(){},
         afterChange: function(){},
         slideshowEnd: function(){},

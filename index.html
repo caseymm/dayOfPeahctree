@@ -71,7 +71,7 @@
 	
 	function parseRunners(xml) {
 		
-	$(xml).find("person").each(function(e,gridId,name,from,yearsRun,age,tweet,slideID,imgSrc,lilImg,bigImg,firstPos,slideSpot){
+	$(xml).find("person").each(function(){
 		
 		gridID = $(this).attr("id");
 		name = $(this).find("name").text();
@@ -104,26 +104,55 @@
 		
 		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
 		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
-		$('#' +slideID).append('<div class="out border shadow"><h4>'+name+'</h4><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
 		
-		$(window).load(function() {
-			$( '#slider' ).nivoSlider();
-                        $('.nivoLink').live('click', function(e) {
+                $('#' +slideID).append('<div class="out border shadow"><h4>'+name+'</h4><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
+                    console.log('append');
+                
+		/*$(window).load(function() {
+
+                    $('.nivoLink').forEach(function(link){
+                        $(link).attr('num');
+                        $(link).click(function(e) {
                         e.preventDefault();
+                            console.log("how many after default");
                         var targetImage = $(this).attr('rel')-1;
-                        var slideNo=$('.nivoSlider').data('nivo:vars').currentSlide; 
+                        var slideNo=$('.nivoSlider').data('nivo:vars').currentSlide;
                         if(targetImage!=slideNo) $('.nivo-control').eq(targetImage).trigger('click');
-                       });
-			$('#slider').hide();
                         
+                       });
+                        $( '#slider' ).nivoSlider();
+			 $('#slider').hide();
+                    });
+		});*/
+                        
+              /*$('.nivoLink').forEach(function(link) {
+                var id = $(link).attr(‘id’);
+                $(link).do_something)with_this_link
+});
+*/
+                    
+                    
+                
+                $(window).load(function() {
+
+                    $('.nivoLink').live('click', function(e) {
+                        e.preventDefault();
+                            console.log("how many after default");
+                        var targetImage = $(this).attr('rel')-1;
+                        var slideNo=$('.nivoSlider').data('nivo:vars').currentSlide;
+                        if(targetImage!=slideNo) $('.nivo-control').eq(targetImage).trigger('click');
+                        
+                       });
+                        $( '#slider' ).nivoSlider();
+			 $('#slider').hide();
 		});
 		
 		//make image grid click to open lightbox
 		$('#'+gridID).click(function(event){
 			$('#hiddenLayer').show();
 			$('#slider').show();
+                        console.log("click to open");
 
-			
 			
 		});	
 		
