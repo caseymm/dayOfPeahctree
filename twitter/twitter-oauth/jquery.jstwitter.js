@@ -6,7 +6,7 @@ $(function() {
 	    // You need to clear tweet-date.txt before toggle between hash and user
 	    // for multiple hashtags, you can separate the hashtag with OR, eg:
 	    // hash: '%23jquery OR %23css'			    
-	    search: '%23peachtree OR %23running', //leave this blank if you want to show user's tweet
+	    search: '%23ajcprr', //leave this blank if you want to show user's tweet
 	    user: '', //username
 	    numTweets: 100, //number of tweets
 	    appendTo: '#jstwitter',
