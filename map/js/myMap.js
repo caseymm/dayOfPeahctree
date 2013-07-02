@@ -31,11 +31,12 @@ var finish = L.icon({
 });
 
 var Marta = L.icon({
-    iconUrl: '../dayOfPeachtree/map/images/MartaF.png',
+    iconUrl: '../dayOfPeachtree/map/images/martaF.png',
 
     iconSize:     [26, 26], // size of the icon
-    iconAnchor:   [13, 13], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    iconAnchor:   [20,10], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-7,-7], // point from which the popup should open relative to the iconAnchor
+    labelAnchor: [0, 0]
 });
 
 
@@ -48,13 +49,13 @@ L.marker([33.786691,-84.383776], {icon: Marker}).addTo(map)
 L.marker([33.781983,-84.380107], {icon: Marker}).addTo(map)
   .bindLabel('The Flying Biscuit Cafe').bindPopup('<a href="http://www.flyingbiscuit.com" target="blank"><b>The Flying Biscuit Cafe</b></a> <br /> 1001 Piedmont Ave NE <br /> Atlanta, GA 30309');
 
-L.marker([33.848178,-84.366889], {icon: Marta}).addTo(map)
+L.marker([33.848,-84.367], {icon: Marta}).addTo(map)
   .bindLabel('Buckhead MARTA').bindPopup('<a href="http://www.itsmarta.com/ns-buc-overview.aspx" target="blank"><b>Buckhead</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div>');
-L.marker([33.845113,-84.357812], {icon: Marta}).addTo(map)
+L.marker([33.845113,-84.358], {icon: Marta}).addTo(map)
   .bindLabel('Lenox MARTA').bindPopup('<a href="http://www.itsmarta.com/ne-len-overview.aspx" target="blank"><b>Lenox</b></a><br /> MARTA Station <br /> <div class="martaGold">Gold Line</div>');
-L.marker([33.789242,-84.387102], {icon: Marta}).addTo(map)
+L.marker([33.789242,-84.38650], {icon: Marta}).addTo(map)
   .bindLabel('Arts Center MARTA').bindPopup('<a href="http://www.itsmarta.com/ne-art-overview.aspx" target="blank"><b>Arts Center</b></a><br /> MARTA Station <br /><div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
-L.marker([33.780699,-84.38663], {icon: Marta}).addTo(map)
+L.marker([33.780910,-84.38623], {icon: Marta}).addTo(map)
   .bindLabel('Midtown MARTA').bindPopup('<a href="http://www.itsmarta.com/ns-mid-overview.aspx" target="blank"><b>Midtown</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
 //L.marker([33.782179,-84.369078], {icon: Marker}).addTo(map)
   //.bindLabel('Park Tavern').bindPopup('<b>Park Tavern</b> <br /> 500 10th Street N.E., <br /> Atlanta, GA 30309');

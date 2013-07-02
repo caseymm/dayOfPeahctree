@@ -75,6 +75,28 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	        animation-duration: 2s;
 }
 
+@-webkit-keyframes slideBack {
+	0% 100% {-webkit-transform: translateX(550px);}
+}
+
+@-moz-keyframes slideBack {
+	100% {-webkit-transform: translateX(550px);}
+}
+
+@-o-keyframes slideBack {
+	100% {-webkit-transform: translateX(550px);}
+}
+@keyframes slideBack {
+	100% {-webkit-transform: translateX(550px);}
+}
+
+.slideBack {
+	-webkit-animation-name: slideBack;
+	-moz-animation-name: slideBack;
+	-o-animation-name: slideBack;
+	animation-name: slideBack;
+}
+
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}	
 	25%, 75% {opacity: 0;}
@@ -133,25 +155,25 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateX(0);}
-	40% {-webkit-transform: translateX(-30px);}
-	60% {-webkit-transform: translateX(-15px);}
+	40% {-webkit-transform: translateX(-10px);}
+	60% {-webkit-transform: translateX(-5px);}
 }
 
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-moz-transform: translateX(0);}
-	40% {-moz-transform: translateX(-30px);}
-	60% {-moz-transform: translateX(-15px);}
+	40% {-moz-transform: translateX(-10px);}
+	60% {-moz-transform: translateX(-5px);}
 }
 
 @-o-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateX(0);}
-	40% {-o-transform: translateX(-30px);}
-	60% {-o-transform: translateX(-15px);}
+	40% {-o-transform: translateX(-10px);}
+	60% {-o-transform: translateX(-5px);}
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
-	40% {transform: translateX(-30px);}
-	60% {transform: translateX(-15px);}
+	40% {transform: translateX(-10px);}
+	60% {transform: translateX(-5px);}
 }
 
 .bounce {
