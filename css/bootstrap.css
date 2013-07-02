@@ -230,7 +230,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #000;
   background-color: #ffffff;
 }
 
@@ -619,10 +619,10 @@ a:focus {
 }
 
 .container {
-  margin-right: auto;
+  /*margin-right: auto;
   margin-left: auto;
   *zoom: 1;
-  margin-top:20px;
+  margin-top:20px;*/
 }
 
 .container:before,
@@ -1030,7 +1030,7 @@ pre code {
 }
 
 form {
-  margin: 0 0 20px;
+  margin: 0 0 0px;
 }
 
 fieldset {
@@ -1075,7 +1075,7 @@ textarea {
 
 label {
   display: block;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
 
 select,
@@ -1173,8 +1173,8 @@ input[type="color"]:focus,
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
+  /*margin: 4px 0 0;
+  margin-top: 1px \9;*/
   *margin-top: 0;
   line-height: normal;
 }

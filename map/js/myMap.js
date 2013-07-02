@@ -1,20 +1,27 @@
+
+
+/*var map = L.map('map', {
+			center: new L.LatLng(33.821656,-84.373627),
+			zoom: 12,
+			layers: [food, shelter, marta],
+		});
+
+L.tileLayer('http://{s}.tile.cloudmade.com/825c6664ffdf4e619e51fb7dd3b47005/101282/256/{z}/{x}/{y}.png', {
+                        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+                        maxZoom: 18
+                        }).addTo(map);*/
+
 var Marker = L.AwesomeMarkers.icon({
   icon: 'food', 
   color: 'red',
   labelAnchor: [7, -33]
-})
+});
 
-var map = L.map('map', {
-			center: new L.LatLng(33.821656,-84.373627),
-			zoom: 12,
-		});
-
-L.tileLayer('http://{s}.tile.cloudmade.com/825c6664ffdf4e619e51fb7dd3b47005/98490/256/{z}/{x}/{y}.png', {
-                        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-                        maxZoom: 18
-                        }).addTo(map);
-
-
+var Shelter = L.AwesomeMarkers.icon({
+  icon: 'umbrella', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
 
 var start = L.icon({
     iconUrl: '../dayOfPeachtree/map/images/flag_green3.png',
@@ -40,32 +47,41 @@ var Marta = L.icon({
 });
 
 
-L.marker([33.847305,-84.366031], {icon: Marker}).addTo(map)
-  .bindLabel('Cook Hall').bindPopup('<a href="http:/cookhallatlanta.com" target="blank"><b>Cook Hall</b></a> <br /> 3377 Peachtree Road NE, <br /> Atlanta GA 30325');
-L.marker([33.804274,-84.39369], {icon: Marker}).addTo(map)
-  .bindLabel('R. Thomas Deluxe Grill').bindPopup('<a href="http://www.rthomasdeluxegrill.net" target="blank"><b>R. Thomas Deluxe Grill</b></a> <br /> 1812 Peachtree Street, NW, <br /> Atlanta, Georgia 30309');
-L.marker([33.786691,-84.383776], {icon: Marker}).addTo(map)
-  .bindLabel('TAP').bindPopup('<a href="http://www.tapat1180.com" target="blank"><b>TAP</b></a> <br /> 1180 Peachtree Street, NE, <br /> Atlanta, GA 30303');
-L.marker([33.781983,-84.380107], {icon: Marker}).addTo(map)
-  .bindLabel('The Flying Biscuit Cafe').bindPopup('<a href="http://www.flyingbiscuit.com" target="blank"><b>The Flying Biscuit Cafe</b></a> <br /> 1001 Piedmont Ave NE <br /> Atlanta, GA 30309');
+a = L.marker([33.847305,-84.366031], {icon: Marker}).bindPopup('<a href="http:/cookhallatlanta.com" target="blank"><b>Cook Hall</b></a> <br /> 3377 Peachtree Road NE, <br /> Atlanta');
+b = L.marker([33.804274,-84.39369], {icon: Marker}).bindPopup('<a href="http://www.rthomasdeluxegrill.net" target="blank"><b>R. Thomas Deluxe Grill</b></a> <br /> 1812 Peachtree Street, NW, <br /> Atlanta');
+c = L.marker([33.786691,-84.383776], {icon: Marker}).bindPopup('<a href="http://www.tapat1180.com" target="blank"><b>TAP</b></a> <br /> 1180 Peachtree Street, NE, <br /> Atlanta');
+d = L.marker([33.781983,-84.380107], {icon: Marker}).bindPopup('<a href="http://www.flyingbiscuit.com" target="blank"><b>The Flying Biscuit Cafe</b></a> <br /> 1001 Piedmont Ave NE <br /> Atlanta');
+e = L.marker([33.845665,-84.368305], {icon: Marker}).bindPopup('<a href="../../css/images/SouthernArt.pdf" target="blank"><b>Southern Art</b></a> <br /> 3315 Peachtree Road NE, Atlanta');
+f = L.marker([33.839231,-84.379056], {icon: Marker}).bindPopup('<a href="http://www.cafeagora.com/" target="blank"><b>Cafe Agora</b></a> <br /> 262 East Paces Ferry, Atlanta');
+g = L.marker([33.835702,-84.382188], {icon: Marker}).bindPopup('<a href="http://www.brioitalian.com/index.html" target="blank"><b>Brio Tuscan Grille</b></a> <br /> 2964 Peachtree Road, Atlanta');
+h = L.marker([33.819927,-84.387209], {icon: Marker}).bindPopup('<a href="http://www.yelp.com/biz/jalisco-mexican-restaurant-atlanta" target="blank"><b> Jalisco </b></a> <br /> 2337 Peachtree Road NE, Atlanta');
+i = L.marker([33.779451,-84.367983], {icon: Marker}).bindPopup('<a href="http://apresdiem.com/" target="blank"><b> Apres Diem </b></a> <br /> 931 Monroe Drive Northeast, Atlanta');
+j = L.marker([33.783374,-84.383841], {icon: Marker}).bindPopup('<a href="http://www.cafeintermezzo.com/" target="blank"><b> Cafe Intermezzo </b></a> <br /> 1065 Peachtree Street at 11th, Atlanta');
+k = L.marker([33.784105,-84.38206], {icon: Marker}).bindPopup('<a href="http://einsteinsatlanta.com/" target="blank"><b> Einstein&#39;s </b></a> <br /> 1077 Juniper St., Atlanta');
+l = L.marker([33.783891,-84.383583], {icon: Marker}).bindPopup('<a href="http://www.micocinarestaurants.com/locations/midtown.html" target="blank"><b> Mi Cocina </b></a> <br /> 1080 Peachtree Street, Atlanta');
+m = L.marker([33.784021,-84.382945], {icon: Marker}).bindPopup('<a href="https://www.facebook.com/CucinaAsellina" target="blank"><b> Cucina Asellina </b></a> <br /> 1075 Peachtree Street, Atlanta');
+n = L.marker([33.783829,-84.383572], {icon: Marker}).bindPopup('<a href="http://www.rasushi.com/atlanta" target="blank"><b> Ra Sushi </b></a> <br /> 1080 Peachtree Street, Atlanta');
 
-L.marker([33.848,-84.367], {icon: Marta}).addTo(map)
-  .bindLabel('Buckhead MARTA').bindPopup('<a href="http://www.itsmarta.com/ns-buc-overview.aspx" target="blank"><b>Buckhead</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div>');
-L.marker([33.845113,-84.358], {icon: Marta}).addTo(map)
-  .bindLabel('Lenox MARTA').bindPopup('<a href="http://www.itsmarta.com/ne-len-overview.aspx" target="blank"><b>Lenox</b></a><br /> MARTA Station <br /> <div class="martaGold">Gold Line</div>');
-L.marker([33.789242,-84.38650], {icon: Marta}).addTo(map)
-  .bindLabel('Arts Center MARTA').bindPopup('<a href="http://www.itsmarta.com/ne-art-overview.aspx" target="blank"><b>Arts Center</b></a><br /> MARTA Station <br /><div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
-L.marker([33.780910,-84.38623], {icon: Marta}).addTo(map)
-  .bindLabel('Midtown MARTA').bindPopup('<a href="http://www.itsmarta.com/ns-mid-overview.aspx" target="blank"><b>Midtown</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
+a1 = L.marker([33.801135,-84.391801], {icon: Shelter}).bindPopup('<a href="http://www.tuktukatl.com/" target="blank"><b>Tuk Tuk Thai Food Loft</b></a> <br /> 1745 Peachtree Street NE, Atlanta');
+a2 = L.marker([33.846307,-84.367726], {icon: Shelter}).bindPopup('<a href="http://highlandbakery.com/" target="blank"><b>Highland Bakery</b></a> <br /> 3343 Peachtree Road NE, Atlanta');
+
+
+b1 = L.marker([33.848,-84.367], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ns-buc-overview.aspx" target="blank"><b>Buckhead</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div>');
+b2 = L.marker([33.845113,-84.358], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ne-len-overview.aspx" target="blank"><b>Lenox</b></a><br /> MARTA Station <br /> <div class="martaGold">Gold Line</div>');
+b3 = L.marker([33.789242,-84.38650], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ne-art-overview.aspx" target="blank"><b>Arts Center</b></a><br /> MARTA Station <br /><div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
+b4 = L.marker([33.780910,-84.38623], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ns-mid-overview.aspx" target="blank"><b>Midtown</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div> <div class="martaGold">Gold Line</div>');
 //L.marker([33.782179,-84.369078], {icon: Marker}).addTo(map)
   //.bindLabel('Park Tavern').bindPopup('<b>Park Tavern</b> <br /> 500 10th Street N.E., <br /> Atlanta, GA 30309');
   
-L.marker([33.85356,-84.359508], {icon: start}).addTo(map).bindLabel('Start');
-L.marker([33.781751,-84.372811], {icon: finish}).addTo(map).bindLabel('Finish');
+c1 = L.marker([33.85356,-84.359508], {icon: start});
+c2 = L.marker([33.781751,-84.372811], {icon: finish});
 
-
+var food = L.layerGroup([a,b,c,d,e,f,g,h,i,j,k,l,m,n]);
+var shelter = L.layerGroup([a1, a2]);
+var marta = L.layerGroup([b1, b2, b3, b4]);
+var start = L.layerGroup([c1, c2]);
  
- var path = L.polyline([
+var path = L.polyline([
 				[33.85356,-84.359508],
 				[33.849568,-84.362941],
 				[33.848891,-84.364743],
@@ -96,5 +112,37 @@ L.marker([33.781751,-84.372811], {icon: finish}).addTo(map).bindLabel('Finish');
 				[33.784462,-84.382961],
 				[33.783196,-84.383862],
 				[33.781751,-84.384034],
-				[33.781751,-84.372811]], {}).addTo(map);
+				[33.781751,-84.372811]], {});
+
+var cmAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    cmUrl = 'http://{s}.tile.cloudmade.com/825c6664ffdf4e619e51fb7dd3b47005/101282/256/{z}/{x}/{y}.png';
+ 
+ var regular   = L.tileLayer(cmUrl, {styleId: 101282, attribution: cmAttr});
+
+		var map = L.map('map', {
+			center: new L.LatLng(33.821656,-84.373627),
+			zoom: 12,
+			layers: [regular, food, shelter, marta, start, path],
+		});
+
+
+L.tileLayer('http://{s}.tile.cloudmade.com/825c6664ffdf4e619e51fb7dd3b47005/101282/256/{z}/{x}/{y}.png', {
+                        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+                        maxZoom: 18
+                        }).addTo(map);
+
+
+
+
+var baseLayers = {};
+
+var overlayMaps = {
+    
+    "Food": food,
+    "Shelter": shelter,
+    "MARTA": marta
+    //"All scheduled new libraries": all
+};
+
+L.control.layers(baseLayers, overlayMaps).addTo(map);
  

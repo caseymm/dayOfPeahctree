@@ -7967,7 +7967,7 @@ L.Control.Layers = L.Control.extend({
 		    container = this._container = L.DomUtil.create('div', className);
 
 		//Makes this work on IE10 Touch devices by stopping it from firing a mouseout event when the touch is released
-		container.setAttribute('aria-haspopup', true);
+		//container.setAttribute('aria-haspopup', true);
 
 		if (!L.Browser.touch) {
 			L.DomEvent.disableClickPropagation(container);
@@ -7979,13 +7979,13 @@ L.Control.Layers = L.Control.extend({
 		var form = this._form = L.DomUtil.create('form', className + '-list');
 
 		if (this.options.collapsed) {
-			L.DomEvent
-			    .on(container, 'mouseover', this._expand, this)
-			    .on(container, 'mouseout', this._collapse, this);
+			//L.DomEvent
+			    //.on(container, 'mouseover', this._expand, this)
+			    //.on(container, 'mouseout', this._collapse, this);
 
-			var link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
-			link.href = '#';
-			link.title = 'Layers';
+			//var link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
+			//link.href = '#';
+			//link.title = 'Layers';
 
 			if (L.Browser.touch) {
 				L.DomEvent
@@ -7994,7 +7994,7 @@ L.Control.Layers = L.Control.extend({
 				    .on(link, 'click', this._expand, this);
 			}
 			else {
-				L.DomEvent.on(link, 'focus', this._expand, this);
+				//L.DomEvent.on(link, 'focus', this._expand, this);
 			}
 
 			this._map.on('movestart', this._collapse, this);
