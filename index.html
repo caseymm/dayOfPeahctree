@@ -189,11 +189,14 @@
         </div><br />
     </div>
     <div class="span4">
+        <!--<a class="results" href="http://projects.ajc.com/running/peachtree/2013/" target="blank">
+            <div class="headBoxRightRace margin-bottom shadow border">Race Results</div>
+        </a>-->
         <a class="results" href="http://m.ajc.com/weather/interactive-radar/" target="blank">
             <div class="headBoxRight margin-bottom shadow border">Weather Info</div>
         </a>
-        <a class="results" href="http://www.itsmarta.com/" target="blank">
-            <div class="headBoxRight2 margin-bottom shadow"><img src="css/images/martaLogo.png" style="height:50px; padding-top:7px;"/></div>
+        <a class="results" href="http://www.ajc.com/weblogs/ajc-peachtree-road-race-tips/2013/jul/03/ajc-peachtree-road-race-last-minute-tips-and-faqs/" target="blank">
+            <div class="headBoxRight2 margin-bottom shadow"><img src="css/images/martaLogo.png" style="height:50px; padding-top:7px;"></div>
         </a>
     </div>
 </div>
@@ -265,7 +268,7 @@
     <div class="span4">
         <div class="spacerTop"></div>
         <div class="shadow twitterHead" id="height">
-            
+            <img src="css/images/twitterBird.png" style="height:35px; padding-left:2%;"/>
             <span class="headText">#ajcprr</span>
         <div class="iframe"><iframe width="100%" height="1083px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
         </div>
@@ -287,6 +290,12 @@
                         $('.red').addClass("animatedMed bounce");
                 }, function() {
                         $('.red').removeClass("animatedMed bounce");
+                });
+                
+                $('.headBoxRightRace').hover(function() {
+                        $('.headBoxRightRace').addClass("animated pulse");
+                }, function() {
+                        $('.headBoxRightRace').removeClass("animated pulse");
                 });
                 
                 $('.headBoxRight').hover(function() {
