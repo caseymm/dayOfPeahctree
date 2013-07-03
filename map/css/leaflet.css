@@ -306,8 +306,8 @@ fill: none;
 	height: 36px;*/
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
-	width: 44px;
-	height: 44px;
+	/*width: 44px;
+	height: 44px;*/
 	}
 .leaflet-control-layers-list{
 	padding: 5px 5px 5px 5px;
@@ -407,7 +407,7 @@ fill: none;
 	        border-radius: 5px;
 	}
 .leaflet-popup-content {
-	margin: 5px 5px;
+	margin: 15px 10px 10px 10px;
 	line-height: 1.4;
 	}
 .leaflet-popup-content p {

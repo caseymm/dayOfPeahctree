@@ -17,8 +17,44 @@ var Marker = L.AwesomeMarkers.icon({
   labelAnchor: [7, -33]
 });
 
-var Shelter = L.AwesomeMarkers.icon({
-  icon: 'umbrella', 
+var Group = L.AwesomeMarkers.icon({
+  icon: 'group', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var Shopping = L.AwesomeMarkers.icon({
+  icon: 'tags', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var Hospital = L.AwesomeMarkers.icon({
+  icon: 'h-sign', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var Museum = L.AwesomeMarkers.icon({
+  icon: 'bookmark-empty', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var Offices = L.AwesomeMarkers.icon({
+  icon: 'building', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var School = L.AwesomeMarkers.icon({
+  icon: 'pencil', 
+  color: 'blue',
+  labelAnchor: [7, -33]
+});
+
+var Hotel = L.AwesomeMarkers.icon({
+  icon: 'suitcase', 
   color: 'blue',
   labelAnchor: [7, -33]
 });
@@ -62,9 +98,47 @@ l = L.marker([33.783891,-84.383583], {icon: Marker}).bindPopup('<a href="http://
 m = L.marker([33.784021,-84.382945], {icon: Marker}).bindPopup('<a href="https://www.facebook.com/CucinaAsellina" target="blank"><b> Cucina Asellina </b></a> <br /> 1075 Peachtree Street, Atlanta');
 n = L.marker([33.783829,-84.383572], {icon: Marker}).bindPopup('<a href="http://www.rasushi.com/atlanta" target="blank"><b> Ra Sushi </b></a> <br /> 1080 Peachtree Street, Atlanta');
 
-a1 = L.marker([33.801135,-84.391801], {icon: Shelter}).bindPopup('<a href="http://www.tuktukatl.com/" target="blank"><b>Tuk Tuk Thai Food Loft</b></a> <br /> 1745 Peachtree Street NE, Atlanta');
-a2 = L.marker([33.846307,-84.367726], {icon: Shelter}).bindPopup('<a href="http://highlandbakery.com/" target="blank"><b>Highland Bakery</b></a> <br /> 3343 Peachtree Road NE, Atlanta');
+a1 = L.marker([33.801135,-84.391801], {icon: Group}).bindPopup('<a href="http://www.tuktukatl.com/" target="blank"><b>Tuk Tuk Thai Food Loft</b></a> <br /> 1745 Peachtree Street NE, Atlanta');
+a2 = L.marker([33.846307,-84.367726], {icon: Group}).bindPopup('<a href="http://highlandbakery.com/" target="blank"><b>Highland Bakery</b></a> <br /> 3343 Peachtree Road NE, Atlanta');
+a3 = L.marker([33.830471,-84.366031], {icon: Group}).bindPopup('<b>The Cathedral of St. Philip</b> <br /> Church');
+a4 = L.marker([33.82943,-84.385704], {icon: Group}).bindPopup('<b>Second-Ponce de Leon Baptist Church</b> <br /> Church');
+a5 = L.marker([33.828163,-84.386246], {icon: Group}).bindPopup('<b>Cathedral of Christ the King</b> <br /> Church');
+a6 = L.marker([33.823223,-84.386848], {icon: Group}).bindPopup('<b>Covenant Presbyterian Latchkey</b> <br /> Church');
+a7 = L.marker([33.796772,-84.389648], {icon: Group}).bindPopup('<b>Peachtree Christian Church</b> <br /> Church');
+a8 = L.marker([33.790142,-84.384964], {icon: Group}).bindPopup('<b>First Presbyterian Church</b> <br /> Church');
+a9 = L.marker([33.845604,-84.3685], {icon: Group}).bindPopup('<b>Peachtree Road United Methodist</b> <br /> Church');
+a10 = L.marker([33.796013,-84.387939], {icon: Group}).bindPopup('<b>The Temple</b> <br /> Synagogue');
+a23 = L.marker([33.799999,-84.392639], {icon: Group}).bindPopup('<b>Atlanta Masonic Center</b> <br /> Lodge');
 
+a27 = L.marker([33.790806,-84.3862], {icon: Group}).bindPopup('<b>Pershing Point Park</b> <br /> Park');
+a28 = L.marker([33.7869,-84.382736], {icon: Group}).bindPopup('<b>Peachtree Cir. at 15th St. Triangle</b> <br /> Park');
+a29 = L.marker([33.844196,-84.371178], {icon: Group}).bindPopup('<b>Charlie Loudermilk Park</b> <br /> Park');
+
+a11 = L.marker([33.819141,-84.386993], {icon: Shopping}).bindPopup('<b>Peachtree-Battle Shopping Center</b> <br /> Shopping');
+a12 = L.marker([33.816879,-84.390511], {icon: Shopping}).bindPopup('<b>Peachtree Square Shopping Center</b> <br /> Shopping');
+a13 = L.marker([33.782036,-84.384399], {icon: Shopping}).bindPopup('<b>Colony Square Mall</b> <br /> Shopping');
+a14 = L.marker([33.838978,-84.38031], {icon: Shopping}).bindPopup('<b>The Peach Shopping Center</b> <br /> Shopping');
+a15 = L.marker([33.840137,-84.37925], {icon: Shopping}).bindPopup('<b>Buckhead Plaza</b> <br /> Shopping and Offices');
+
+a16 = L.marker([33.808571,-84.395271], {icon: Hospital}).bindPopup('<b>Piedmont Hospital</b> <br /> Hospital');
+
+a17 = L.marker([33.795593,-84.387619], {icon: Museum}).bindPopup('<b>Rhodes Hall</b> <br /> Historic House Museum');
+a18 = L.marker([33.788338,-84.383568], {icon: Museum}).bindPopup('<b>Woodruff Arts Center</b> <br /> Museum');
+a19 = L.marker([33.783485,-84.38353], {icon: Museum}).bindPopup('<b>Margaret Mitchell House and Museum</b> <br /> Historic House Museum');
+
+a20 = L.marker([33.793865,-84.387474], {icon: Offices}).bindPopup('<b>SunTrust: Pershing Point</b> <br /> Offices');
+a21 = L.marker([33.781452,-84.38427], {icon: Offices}).bindPopup('<b>Federal Reserve Bank of Atlanta</b> <br /> Offices');
+a22 = L.marker([33.841831,-84.37587], {icon: Offices}).bindPopup('<b>Terminus</b> <br /> Offices');
+
+a24 = L.marker([33.796848,-84.390961], {icon: School}).bindPopup('<b>Savannah College of Art and Design Atlanta</b> <br /> School');
+a25 = L.marker([33.790047,-84.385651], {icon: School}).bindPopup('<b>Atlanta College of Art</b> <br /> School');
+a26 = L.marker([33.792076,-84.385384], {icon: School}).bindPopup('<b>E Rivers Elementary School</b> <br /> School');
+
+a30 = L.marker([33.83493,-84.382637], {icon: Hotel}).bindPopup('<b>Lowes Atlanta Hotel</b> <br /> Hotel');
+a31 = L.marker([33.845333,-84.370377], {icon: Hotel}).bindPopup('<b>InterContinental Buckhead Atlanta</b> <br /> Hotel');
+a32 = L.marker([33.844746,-84.368797], {icon: Hotel}).bindPopup('<b>Grand Hyatt Atlanta in Buckhead</b> <br /> Hotel');
+a33 = L.marker([33.819553,-84.389938], {icon: Hotel}).bindPopup('<b>Embassy Suites Atlanta - Buckhead</b> <br /> Hotel');
+a34 = L.marker([33.799446,-84.392479], {icon: Hotel}).bindPopup('<b>Residence Inn Atlanta Midtown/17th Street</b> <br /> Hotel');
 
 b1 = L.marker([33.848,-84.367], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ns-buc-overview.aspx" target="blank"><b>Buckhead</b></a><br /> MARTA Station <br /> <div class="martaRed">Red Line</div>');
 b2 = L.marker([33.845113,-84.358], {icon: Marta}).bindPopup('<a href="http://www.itsmarta.com/ne-len-overview.aspx" target="blank"><b>Lenox</b></a><br /> MARTA Station <br /> <div class="martaGold">Gold Line</div>');
@@ -77,7 +151,7 @@ c1 = L.marker([33.85356,-84.359508], {icon: start});
 c2 = L.marker([33.781751,-84.372811], {icon: finish});
 
 var food = L.layerGroup([a,b,c,d,e,f,g,h,i,j,k,l,m,n]);
-var shelter = L.layerGroup([a1, a2]);
+var shelter = L.layerGroup([a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34]);
 var marta = L.layerGroup([b1, b2, b3, b4]);
 var start = L.layerGroup([c1, c2]);
  
@@ -139,7 +213,7 @@ var baseLayers = {};
 var overlayMaps = {
     
     "Food": food,
-    "Shelter": shelter,
+    "View Point/Shelter": shelter,
     "MARTA": marta
     //"All scheduled new libraries": all
 };
