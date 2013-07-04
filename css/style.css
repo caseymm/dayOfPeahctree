@@ -55,7 +55,7 @@ margin-left: -230px;
     padding-top:15px;
 
 }
-@media (max-width: 767px){
+/*@media (max-width: 767px){
     .twitterHead{
     width:100%;
     height:50px;
@@ -70,7 +70,7 @@ margin-left: -230px;
 
 }
 }
-/*@media (max-width: 700px){
+@media (max-width: 700px){
     .twitterHead{
     width:100%;
     height:50px;
@@ -145,7 +145,7 @@ margin-left: -230px;
 }
 
 #height{
-    height:855px;
+    height:1010px;
 }
 
 
@@ -249,7 +249,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     height:58px;
     padding-top:19px;
     background-color: #A30008;
-    text-align: center;
+    padding-left: 2%;
 }
 
 .headBoxRightRace:hover{
@@ -333,5 +333,14 @@ a.headBoxRight:focus {
     font-size: 30px;
     color: #000;
     
+}
+.mapPad{
+    margin-top:20px;
+}
+
+@media (max-width: 767px){
+.mapPad{
+    margin-top:0px;
+}    
 }
 

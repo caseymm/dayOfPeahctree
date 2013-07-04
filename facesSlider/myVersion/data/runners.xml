@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <people>
-	<person id="img1" url="img/2013/p1.jpg">
+	<person id="img1" url="img/2013/p1.JPG">
 		<name>Zachary Grummer-Strawn</name>
 		<age>20</age>
 		<yrsrun>9</yrsrun>
@@ -8,7 +8,7 @@
 		<outfit>"Because it makes people smile."</outfit>
 		<num>1</num>
 	</person>
-	<person id="img2" url="img/2013/p2.jpg">
+	<person id="img2" url="img/2013/p2.JPG">
 		<name>Kevin Matthews</name>
 		<age>26</age>
 		<yrsrun>14</yrsrun>
@@ -16,7 +16,7 @@
 		<outfit>"Ran out of ideas..."</outfit>
 		<num>2</num>
 	</person>
-	<person id="img3" url="img/2013/p3.jpg">
+	<person id="img3" url="img/2013/p3.JPG">
 		<name>Ted Turner</name>
 		<age>23</age>
 		<yrsrun>3</yrsrun>
@@ -24,7 +24,7 @@
 		<outfit>"We are all Pac Men at heart."</outfit>
 		<num>3</num>
 	</person>
-	<person id="img4" url="img/2013/p4.jpg">
+	<person id="img4" url="img/2013/p4.JPG">
 		<name>Maylene &#38; Kittana Wagener</name>
 		<age>47 &#38; 11</age>
 		<yrsrun>15 &#38; 3</yrsrun>
@@ -32,7 +32,7 @@
 		<outfit>"From Hawaii"</outfit>
 		<num>4</num>
 	</person>
-	<person id="img5" url="img/2013/p5.jpg">
+	<person id="img5" url="img/2013/p5.JPG">
 		<name>Michael Macia</name>
 		<age>24</age>
 		<yrsrun>4</yrsrun>
@@ -40,7 +40,7 @@
 		<outfit>"Motivation"</outfit>
 		<num>5</num>
 	</person>
-	<person id="img6" url="img/2013/p6.jpg">
+	<person id="img6" url="img/2013/p6.JPG">
 		<name>Kasey &#38; Kay Green</name>
 		<age>13 &#38; 47</age>
 		<yrsrun>1 &#38; 2</yrsrun>
@@ -48,7 +48,7 @@
 		<outfit>"I'm Wonder Woman. Kasey's brother paid him $20 to wear a tutu!"</outfit>
 		<num>6</num>
 	</person>
-	<person id="img7" url="img/2013/p7.jpg">
+	<person id="img7" url="img/2013/p7.JPG">
 		<name>Dr. Teresa Harvey</name>
 		<age>51</age>
 		<yrsrun>3</yrsrun>
@@ -56,7 +56,7 @@
 		<outfit>"Dare to be different."</outfit>
 		<num>7</num>
 	</person>
-	<person id="img8" url="img/2013/p8.jpg">
+	<person id="img8" url="img/2013/p8.JPG">
 		<name>Jessica Criger &#38; CC Cofer</name>
 		<age>24 &#38; 19</age>
 		<yrsrun>1</yrsrun>
@@ -64,7 +64,7 @@
 		<outfit>"Wanted to stand out somehow as a "First Timer" (knowing we would be stopping/walking off and on). Saw a bumper sticker about "making frequent stops," so there we had it. It described us to a "T"."</outfit>
 		<num>8</num>
 	</person>
-	<person id="img9" url="img/2013/p9.jpg">
+	<person id="img9" url="img/2013/p9.JPG">
 		<name>Lauren Trammel &#38; Carolyn Scruggs</name>
 		<age>29 &#38; 60</age>
 		<yrsrun>4 &#38; 12</yrsrun>
@@ -72,7 +72,7 @@
 		<outfit>"American Theme. Proud to be an American and support the victims of the Boston Bombing - We stand united as Americans."</outfit>
 		<num>9</num>
 	</person>
-	<person id="img10" url="img/2013/p10.jpg">
+	<person id="img10" url="img/2013/p10.JPG">
 		<name>Tony Tran &#38; Steve Polus</name>
 		<age>38 &#38; 24</age>
 		<yrsrun>1</yrsrun>
@@ -80,7 +80,7 @@
 		<outfit>"Because it's awesome!"</outfit>
 		<num>10</num>
 	</person>
-	<person id="img11" url="img/2013/p11.jpg">
+	<person id="img11" url="img/2013/p11.JPG">
 		<name>Paul Dallas, Matt Ross, Drew Stockman, &#38; Andrew Welsh</name>
 		<age>27, 31, 26, &#38; 27</age>
 		<yrsrun>2</yrsrun>
@@ -88,7 +88,7 @@
 		<outfit>"It's the right thing to do."</outfit>
 		<num>11</num>
 	</person>
-	<person id="img12" url="img/2013/p12.jpg">
+	<person id="img12" url="img/2013/p12.JPG">
 		<name>Paula Kocher &#38; Reg Barnes</name>
 		<age>55 &#38; 55</age>
 		<yrsrun>Both volunteers and Paula's 29th AJC Peachtree Road Race</yrsrun>
@@ -96,7 +96,7 @@
 		<outfit>"Uncle Sam and Betsy Ross."</outfit>
 		<num>12</num>
 	</person>
-	<person id="img13" url="img/2013/p13.jpg">
+	<person id="img13" url="img/2013/p13.JPG">
 		<name>Jamie Greiner</name>
 		<age>40</age>
 		<yrsrun>1</yrsrun>
@@ -104,7 +104,7 @@
 		<outfit>"Promoting the Great Georgia Air Show."</outfit>
 		<num>13</num>
 	</person>
-	<person id="img14" url="img/2013/p14.jpg">
+	<person id="img14" url="img/2013/p14.JPG">
 		<name>Daniel Wangel &#38; Mary Ensell</name>
 		<age>22 &#38; 19</age>
 		<yrsrun>2</yrsrun>
@@ -112,7 +112,7 @@
 		<outfit>"He forced me to."</outfit>
 		<num>14</num>
 	</person>
-	<person id="img15" url="img/2013/p15.jpg">
+	<person id="img15" url="img/2013/p15.JPG">
 		<name>Melanie Careres &#38; Jennifer Castleberry</name>
 		<age>33 &#38; 32</age>
 		<yrsrun>8 &#38; 4</yrsrun>
@@ -120,7 +120,7 @@
 		<outfit>"'Merica!"</outfit>
 		<num>15</num>
 	</person>
-	<person id="img16" url="img/2013/p16.jpg">
+	<person id="img16" url="img/2013/p16.JPG">
 		<name>Alethia Tukes</name>
 		<age>49</age>
 		<yrsrun>7</yrsrun>
@@ -128,7 +128,7 @@
 		<outfit>"USA"</outfit>
 		<num>16</num>
 	</person>
-	<person id="img17" url="img/2013/p17.jpg">
+	<person id="img17" url="img/2013/p17.JPG">
 		<name>Jose Torrens &#38; Matthew Quinn</name>
 		<age>33 &#38; 42</age>
 		<yrsrun>3</yrsrun>
@@ -136,7 +136,7 @@
 		<outfit>"Fireworks were cancelled so we are the fireworks."</outfit>
 		<num>17</num>
 	</person>
-	<person id="img18" url="img/2013/p18.jpg">
+	<person id="img18" url="img/2013/p18.JPG">
 		<name>Lindsay Bendeck, Krista Eberle, &#38; Holly Henderson</name>
 		<age>34, 27, &#38; 33</age>
 		<yrsrun>3, 2, &#38; 2</yrsrun>
@@ -144,7 +144,7 @@
 		<outfit>"Why not? Happy Birthday America."</outfit>
 		<num>18</num>
 	</person>
-	<person id="img19" url="img/2013/p19.jpg">
+	<person id="img19" url="img/2013/p19.JPG">
 		<name>Tony &#38; D'Anna Klinger</name>
 		<age>33 &#38; 31</age>
 		<yrsrun>7</yrsrun>
@@ -152,7 +152,7 @@
 		<outfit>"Rain Rain Flash Flood"</outfit>
 		<num>19</num>
 	</person>
-	<person id="img20" url="img/2013/p20.jpg">
+	<person id="img20" url="img/2013/p20.JPG">
 		<name>James Bowling</name>
 		<age>38</age>
 		<yrsrun>12</yrsrun>
@@ -160,7 +160,7 @@
 		<outfit>"USA - related"</outfit>
 		<num>20</num>
 	</person>
-	<person id="img21" url="img/2013/p21.jpg">
+	<person id="img21" url="img/2013/p21.JPG">
 		<name>John Paul Michalik</name>
 		<age>36</age>
 		<yrsrun>2</yrsrun>
@@ -168,7 +168,7 @@
 		<outfit>"'Merica."</outfit>
 		<num>21</num>
 	</person>
-	<person id="img22" url="img/2013/p22.jpg">
+	<person id="img22" url="img/2013/p22.JPG">
 		<name>Darren McCall</name>
 		<age>30</age>
 		<yrsrun>3</yrsrun>
@@ -176,7 +176,7 @@
 		<outfit>"Why not? America!"</outfit>
 		<num>22</num>
 	</person>
-	<person id="img23" url="img/2013/p23.jpg">
+	<person id="img23" url="img/2013/p23.JPG">
 		<name>Marcela Natalie Durante</name>
 		<age>24</age>
 		<yrsrun>1</yrsrun>
@@ -184,7 +184,7 @@
 		<outfit>"Recently a U.S. citizen from Argentina."</outfit>
 		<num>23</num>
 	</person>
-	<person id="img24" url="img/2013/p24.jpg">
+	<person id="img24" url="img/2013/p24.JPG">
 		<name>Jonathan Pelham</name>
 		<age>16</age>
 		<yrsrun>7</yrsrun>
@@ -192,7 +192,7 @@
 		<outfit>"It's awesome. 'Merica."</outfit>
 		<num>24</num>
 	</person>
-	<person id="img25" url="img/2013/p25.jpg">
+	<person id="img25" url="img/2013/p25.JPG">
 		<name>Andrea Ramirez</name>
 		<age>37</age>
 		<yrsrun>1</yrsrun>
@@ -200,7 +200,7 @@
 		<outfit>"Love USA! It's its B-Day!"</outfit>
 		<num>25</num>
 	</person>
-	<person id="img26" url="img/2013/p26.jpg">
+	<person id="img26" url="img/2013/p26.JPG">
 		<name>Eli Payne</name>
 		<age>17</age>
 		<yrsrun>1</yrsrun>
@@ -208,7 +208,7 @@
 		<outfit>"To show American Pride with 13 bars, 50 stars, and a whole mess of American Spirit."</outfit>
 		<num>26</num>
 	</person>
-	<person id="img27" url="img/2013/p27.jpg">
+	<person id="img27" url="img/2013/p27.JPG">
 		<name>Jeremy Williams</name>
 		<age>41</age>
 		<yrsrun>19</yrsrun>
@@ -216,7 +216,7 @@
 		<outfit>"Pride - USA"</outfit>
 		<num>27</num>
 	</person>
-	<person id="img28" url="img/2013/p28.jpg">
+	<person id="img28" url="img/2013/p28.JPG">
 		<name>William Hallam</name>
 		<age>29</age>
 		<yrsrun>3</yrsrun>
@@ -224,7 +224,7 @@
 		<outfit>"America!"</outfit>
 		<num>28</num>
 	</person>
-	<!--<person id="img29" url="img/2013/hyosub.jpg">
+	<!--<person id="img29" url="img/2013/hyosub.JPG">
 		<name>Hyosub Shin</name>
 		<num>29</num>
 	</person>-->
