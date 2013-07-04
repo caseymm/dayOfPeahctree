@@ -75,38 +75,40 @@
 
 @media screen and (max-width: 945px) {
 	.cbp-rfgrid li {
-		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 5);
-		width: calc(100% / 5);
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
 	}
 }
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 5);
-		width: calc(100% / 5);
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
 	}
 }
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 5);
-		width: calc(100% / 5);
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
 	}
 }
 
 @media screen and (max-width: 400px) {
 	.cbp-rfgrid li {
-		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 5);
-		width: calc(100% / 5);
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
 	}
 }
 
 @media screen and (max-width: 300px) {
 	.cbp-rfgrid li {
-		width: 100%;
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
 	}
 }

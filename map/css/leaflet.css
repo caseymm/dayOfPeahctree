@@ -185,7 +185,7 @@ fill: none;
 .leaflet-container a {
 	color: #1960BD;
 	font-size:13px;
-	text-decoration:none;
+	text-decoration:underline;
 	}
 .leaflet-container a.leaflet-active {
 	outline: 2px solid orange;

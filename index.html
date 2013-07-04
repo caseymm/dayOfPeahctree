@@ -54,7 +54,7 @@
 	var from;
 	var yearsRun;
 	var age;
-	var tweet;
+	var outfit;
 	var slideID;
 	var imgSrc;
 	var lilImg;
@@ -82,7 +82,7 @@
 		from = $(this).find("from").text();
 		yearsRun = $(this).find("yrsrun").text();
 		age = $(this).find("age").text();
-		tweet = $(this).find("tweet").text();
+		outfit = $(this).find("outfit").text();
 		slideID = gridID + "div";
                 jumpID = gridID + "jump";
                 num = parseFloat($(this).find("num").text());
@@ -91,7 +91,7 @@
 			state.push($(this).find('State').text());
 			num.push(parseFloat($(this).find('number').text())); */
                 
-		//caption = '<div class="nivo-caption" ><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>';
+		//caption = '<div class="nivo-caption" ><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you outfit right now?</b></p><p>'+outfit+'</p></div>';
 		
 		imgSrc = $(this).attr("url");
 		lilImg = '<a id="#" class="nivoLink" rel="' + num + '"><img src="' + imgSrc + '" width="130px" height="130px"/><div><h3>' + name + '</h3></div></a>';
@@ -105,11 +105,12 @@
 		
 		
 		$('<a href="#"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt="" /><div id="' + slideID + '"></div></a>').appendTo('.nivoSlider');
+                //$('<a href="#"><img src="' + imgSrc + '" data-thumb="' + imgSrc + '" alt="" /><div id="' + slideID + '"></div></a>').appendTo('.nivoSlider');
 		
-		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('#inside');
-		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></div>').appendTo('.nivo-html-caption');
+		//$('<div id="'+ slideID +'"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you outfit right now?</b></p><p>'+outfit+'</p></div>').appendTo('#inside');
+		//$('<div id="' + slideID + '"><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you outfit right now?</b></p><p>'+outfit+'</p></div>').appendTo('.nivo-html-caption');
 		
-                $('#' +slideID).append('<div class="out border shadow"><h4>'+name+'</h4><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>What would you tweet right now?</b></p><p>'+tweet+'</p></out>');
+                $('#' +slideID).append('<div class="out border shadow"><h4>'+name+'</h4><p><b>From:</b> '+from+'</p><p><b>Age:</b> '+age+'</p><p><b>Years running the Peachtree:</b> '+yearsRun+'</p><p><b>Why did you choose this outfit?</b></p><p>'+outfit+'</p></out>');
                     console.log('append');
                 
 		/*$(window).load(function() {
@@ -189,9 +190,9 @@
         </div><br />
     </div>
     <div class="span4">
-        <!--<a class="results" href="http://projects.ajc.com/running/peachtree/2013/" target="blank">
+        <a class="results" href="http://projects.ajc.com/running/peachtree/2013/" target="blank">
             <div class="headBoxRightRace margin-bottom shadow border">Race Results</div>
-        </a>-->
+        </a>
         <a class="results" href="http://m.ajc.com/weather/interactive-radar/" target="blank">
             <div class="headBoxRight margin-bottom shadow border">Weather Info</div>
         </a>
@@ -203,8 +204,57 @@
 
 <div class="row-fluid">
     <div class="span8">
-        
-		<script type="text/javascript">
+
+                
+                <div class="blue headBox margin-bottom shadow"><span class="name">Peachtree 2013 Outfits</span></div>
+                
+                <ul class="cbp-rfgrid">	
+			<!--This is where the images get rendered -->
+                        <!--<li><a id="#" class="nivoLink" rel="29"><img src="img/2013/hyosub.jpg" /><div><h3>Hyosub Shin</h3></div></a></li>-->
+                        
+			</ul>
+                             
+			
+			<!--slider info-->
+			<div class="slider-wrapper theme-default">
+				<div id="slider" class="nivoSlider">
+					<!--<a href="#">
+                                            <img src="img/2013/hyosub.jpg" data-thumb="img/2013/hyosub.jpg" />
+                                            <div id="img1div">
+                                                <div class="out border shadow">
+                                                    <h4>Hyosub Shin</h4>
+                                                    <p>Photographer</p>
+                                                </div>
+                                            </div>
+                                        </a>-->
+				</div>
+				
+				<div class="nivo-html-caption">
+					<!--<div id="block"></div>-->
+					</div>
+				
+			<!--end slider info-->
+			
+			</div>
+                        
+               
+  
+    </div>
+
+    <div class="span4">
+        <div class="spacerTop"></div>
+        <div class="shadow twitterHead" id="height">
+            <img src="css/images/twitterBird.png" style="height:35px; padding-left:2%;"/>
+            <span class="headText">#ajcprr</span>
+        <div class="iframe"><iframe width="100%" height="790px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
+        </div>
+     
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+         <script type="text/javascript">
 			$(document).ready(function() {
 				$("#bounce").zAccordion({
 					tabWidth: "10%",
@@ -238,41 +288,6 @@
                 
                 </div>
                 <div class="closer">Close</div>
-                
-                
-                <div class="blue headBox margin-bottom shadow"><span class="name">Faces of the 2012 Peachtree</span></div>
-                
-                <ul class="cbp-rfgrid">	
-			<!--This is where the images get rendered -->
-			</ul>
-                             
-			
-			<!--slider info-->
-			<div class="slider-wrapper theme-default">
-				<div id="slider" class="nivoSlider">
-					
-				</div>
-				
-				<div class="nivo-html-caption">
-					<!--<div id="block"></div>-->
-					</div>
-				
-			<!--end slider info-->
-			
-			</div>
-                        
-                
-  
-    </div>
-
-    <div class="span4">
-        <div class="spacerTop"></div>
-        <div class="shadow twitterHead" id="height">
-            <img src="css/images/twitterBird.png" style="height:35px; padding-left:2%;"/>
-            <span class="headText">#ajcprr</span>
-        <div class="iframe"><iframe width="100%" height="1083px" scrolling="yes" overflow="hidden" frameborder="no"  src="http://stage.host.coxmediagroup.com/ajc/digitalprojects/twitter-oauth/index.html"></iframe></div>
-        </div>
-     
     </div>
 </div>
 
